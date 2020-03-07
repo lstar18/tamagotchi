@@ -1,4 +1,4 @@
-let full = 60;
+let full = 100;
 
 const getFullScore = () => full;
 

@@ -1,6 +1,8 @@
 import '../styles/main.scss';
 import eat from './components/eat/eat';
+import play from './components/play/play';
 import eatData from './helper/data/eatData';
+import playData from './helper/data/playData';
 
 const addToFullScore = () => {
   eatData.setFullScore(10);
@@ -12,10 +14,24 @@ const subFromFullScore = () => {
   eat.eatBuilder();
 };
 
+const addFiftyFunScore = () => {
+  playData.setFunScore(50);
+  play.playBuilder();
+};
+
+const addTwoFunScore = () => {
+  playData.setFunScore(2);
+  play.playBuilder();
+};
+
+
 const init = () => {
   eat.eatBuilder();
   $('#eat').on('click', '#healthy-food', addToFullScore);
   $('#eat').on('click', '#unhealthy-food', subFromFullScore);
+  play.playBuilder();
+  $('#play').on('click', '#super-fun', addFiftyFunScore);
+  $('#play').on('click', '#slightly-fun', addTwoFunScore);
 };
 
 init();
