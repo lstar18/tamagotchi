@@ -1,0 +1,7 @@
+@import '../../../styles/colors.scss';
+@import '../../../styles/variables.scss';
+
+#play {
+  @include quadrant;
+  background-color: $red;
+}

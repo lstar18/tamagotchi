@@ -1,7 +1,16 @@
 @import "~bootstrap/scss/bootstrap";
 @import "~@fortawesome/fontawesome-free/css/all.min.css";
+@import "./colors.scss";
+@import "./variables.scss";
+@import "../javascripts/components/eat/eat.scss";
+@import "../javascripts/components/fight/fight.scss";
+@import "../javascripts/components/play/play.scss";
+@import "../javascripts/components/sleep/sleep.scss";
 
 body {
     background-color: grey;
+    #app {
+        display: flex;
+        flex-flow: row wrap;
+    }
 }
-
