@@ -1,0 +1,7 @@
+@import '../../../styles/colors.scss';
+@import '../../../styles/variables.scss';
+
+#fight {
+  @include quadrant;
+  background-color: $gold;
+}

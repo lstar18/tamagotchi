@@ -1,0 +1,7 @@
+@import '../../../styles/colors.scss';
+@import '../../../styles/variables.scss';
+
+#eat {
+  @include quadrant;
+  background-color: $green;
+}
